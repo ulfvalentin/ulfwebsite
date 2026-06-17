@@ -28,6 +28,7 @@
       <!-- Desktop Navigation -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#convidera">Convidera</a></li>
         <li><a href="#haltung">Haltung</a></li>
         <li><a href="#vortraege">Vorträge</a></li>
         <li><a href="#events">Events</a></li>
@@ -49,23 +50,10 @@
   ============================================================ -->
   <section class="hero">
     <div class="container hero-inner">
-      <div class="hero-image-wrap">
-        <img
-          src="Ulf_Profilbild.jpg"
-          alt="Ulf Valentin – Partner bei Convidera, Speaker"
-          class="hero-image"
-          width="320"
-          height="320"
-        />
-      </div>
-
-      <div class="hero-content">
-        <p class="hero-eyebrow">Partner bei Convidera · Speaker · Veranstalter</p>
-        <h1 class="hero-headline">
-          Ich helfe B2B-Unternehmen, Vertrieb und KI zu einem echten Wachstumssystem zu verbinden – bevor es ihre Wettbewerber tun.
-        </h1>
-        <a href="#kontakt" class="btn btn-primary">Kontakt aufnehmen</a>
-      </div>
+      <p class="hero-eyebrow">Partner bei Convidera · Speaker · Veranstalter</p>
+      <h1 class="hero-quote">Zukunft kann nicht verwaltet werden, sie wird gemacht.</h1>
+      <p class="hero-sub">Ulf Valentin – B2B-Vertrieb, KI und digitale Transformation</p>
+      <a href="#kontakt" class="btn btn-hero">Kontakt aufnehmen</a>
     </div>
   </section>
 
@@ -88,6 +76,58 @@
         <p>
           Er fordert Unternehmen heraus, unbequeme Fragen zu stellen – und bleibt dabei bis die Antworten umgesetzt sind. Als Berater, Veranstalter und Host des Podcasts <strong>Revenue Rebellion</strong> verbindet er Menschen, Ideen und Perspektiven, die sonst selten zusammenkommen.
         </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONVIDERA
+  ============================================================ -->
+  <section class="section" id="convidera">
+    <div class="container">
+      <span class="section-label">Meine Arbeit</span>
+      <h2 class="section-title">Partner bei Convidera.</h2>
+
+      <div class="convidera-intro">
+        <p>
+          <a href="https://www.convidera.com" target="_blank" rel="noopener">Convidera</a> ist eine digitale Wachstumsberatung. Wir arbeiten mit Unternehmen daran, Vertrieb, Marketing und Technologie so zu verbinden, dass echtes, messbares Wachstum entsteht – nicht als Projekt, sondern als System.
+        </p>
+        <p>
+          Als Partner bringe ich die Perspektive des B2B-Vertriebs in jede Transformation ein: Was nützt die beste Digitalisierung, wenn sie nicht verkauft wird?
+        </p>
+      </div>
+
+      <div class="convidera-grid">
+
+        <div class="convidera-card">
+          <div class="convidera-number">01</div>
+          <h3 class="convidera-title">B2B Sales Transformation</h3>
+          <p class="convidera-desc">
+            Vertriebsorganisationen fit machen für die nächste Generation digitaler Kundenschnittstellen – von der Leadgenerierung bis zum Abschluss. Strukturell, strategisch, umsetzbar.
+          </p>
+        </div>
+
+        <div class="convidera-card">
+          <div class="convidera-number">02</div>
+          <h3 class="convidera-title">KI als Wachstumstreiber</h3>
+          <p class="convidera-desc">
+            KI nicht als Experiment, sondern als Teil der Commercial Engine. Wir identifizieren die Hebel, die wirklich zählen – und setzen sie um, bevor es die Wettbewerber tun.
+          </p>
+        </div>
+
+        <div class="convidera-card">
+          <div class="convidera-number">03</div>
+          <h3 class="convidera-title">Digitale Geschäftsmodelle</h3>
+          <p class="convidera-desc">
+            Neue Erlösquellen erschließen, bestehende Angebote digitalisieren, Wachstum strukturell verankern. Für Unternehmen, die nicht verwalten wollen – sondern gestalten.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="convidera-cta">
+        <a href="https://www.convidera.com" target="_blank" rel="noopener" class="btn btn-outline">Mehr über Convidera</a>
       </div>
     </div>
   </section>
@@ -232,8 +272,6 @@
         Du möchtest mich als Speaker buchen, hast eine Frage zu einem Projekt oder willst einfach ins Gespräch kommen? Schreib mir.
       </p>
 
-      <!-- Kontaktformular via Formspree -->
-      <!-- Ersetze DEINE_FORMSPREE_ID mit deiner Formspree-Formular-ID nach Registrierung auf formspree.io -->
       <form
         action="https://formspree.io/f/mlgkklgb"
         method="POST"
@@ -275,10 +313,7 @@
           ></textarea>
         </div>
 
-        <!-- Honeypot-Feld gegen Spam (unsichtbar für echte User) -->
         <input type="text" name="_gotcha" style="display:none" />
-
-        <!-- Weiterleitungs-URL nach dem Absenden -->
         <input type="hidden" name="_next" value="https://ulfvalentin.de/#kontakt" />
 
         <button type="submit" class="btn btn-primary btn-full">Nachricht senden</button>
@@ -321,9 +356,6 @@
   </footer>
 
 
-  <!-- ============================================================
-       MINIMAL JAVASCRIPT: Mobile Navigation
-  ============================================================ -->
   <script>
     const toggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
@@ -333,7 +365,6 @@
       toggle.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close mobile nav when a link is clicked
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('is-open');
